@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Первая
+{% endblock %}
+
+{% block head %}
+<!-- стили -->
+    {% for j in css %}
+    <link rel="stylesheet" href="/_static/{{ j }}"/>
+    {% endfor %}
+
+{% endblock %}
+
+{% block body %}
+    
+    
+    {% for j in js1 %}
+         <script src="/_static/{{ j }}></script>
+    {% endfor %}
+    
+{% endblock %}
